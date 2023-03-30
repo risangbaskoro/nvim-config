@@ -38,12 +38,9 @@ return packer.startup(function(use)
 
     use("numToStr/Comment.nvim") -- comment with "gc"
 
-    use {
-        'nvim-tree/nvim-tree.lua',
-        requires = {
-            'nvim-tree/nvim-web-devicons', -- optional
-        },
-    }
+    use("nvim-tree/nvim-tree.lua") -- file explorer
+
+    use("nvim-tree/nvim-web-devicons") -- icons for nvim-tree
 
     if packer_bootstrap then
         require("packer").sync()
