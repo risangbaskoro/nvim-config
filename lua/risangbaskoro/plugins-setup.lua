@@ -38,6 +38,16 @@ return packer.startup(function(use)
 
     use("numToStr/Comment.nvim") -- comment with "gc"
 
+    -- fuzzy finder
+    use {
+        "nvim-telescope/telescope.nvim",
+        requires = {
+            { "nvim-lua/popup.nvim" },
+            { "nvim-lua/plenary.nvim" },
+            { "nvim-treesitter/nvim-treesitter" },
+        },
+    }
+
     use("nvim-tree/nvim-tree.lua") -- file explorer
 
     use("nvim-tree/nvim-web-devicons") -- icons for nvim-tree
