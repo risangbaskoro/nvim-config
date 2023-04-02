@@ -42,6 +42,8 @@ return packer.startup(function(use)
 
     use("nvim-tree/nvim-web-devicons") -- icons for nvim-tree
 
+    use("lervag/vimtex") -- latex plugin
+
     if packer_bootstrap then
         require("packer").sync()
     end
